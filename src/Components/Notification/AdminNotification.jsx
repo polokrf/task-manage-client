@@ -35,33 +35,33 @@ const AdminNotification = ({ setNotificationCom,data  }) => {
           <div
             onClick={() => handleNavigate(item)}
             key={item._id}
-            className={` p-2 border-b  mb-2  cursor-pointer border-accent/40 hover:bg-secondary/5  transition-colors text-left ${
+            className={`p-3 border-b cursor-pointer border-accent/40 hover:bg-secondary/5 transition-colors text-left ${
               !item.is_read ? 'bg-secondary/5' : ''
             }`}
           >
-            {/* Employee Profile Image */}
-            <div className="avatar shrink-0 mt-0.5 flex justify-center items-center gap-3">
-              <div className="w-8 h-8 rounded-full border border-accent">
-                <img
-                  src={item.employ_image}
-                  alt={item.employ_name}
-                  onError={e => {
-                    e.target.src = 'https://placehold.co/100x100?text=User';
-                  }}
-                />
+            {/* Top Row: Image & Name together */}
+            <div className="flex items-center gap-2 ">
+              <div className="avatar shrink-0">
+                <div className="w-8 h-8 rounded-full border border-accent overflow-hidden">
+                  <img
+                    src={item?.employ_image}
+                    alt={item?.employ_name}
+                    onError={e => {
+                      e.target.src = 'https://placehold.co/100x100?text=User';
+                    }}
+                  />
+                </div>
               </div>
-              <div>
-                <p className="text-xs text-neutral font-medium leading-relaxed">
-                  <span className="font-bold text-neutral mr-1">
-                    {item.employ_name}
-                  </span>
-                </p>
-              </div>
+              <p className="text-xs text-neutral font-bold truncate">
+                {item?.employ_name}
+              </p>
             </div>
 
-            {/* Notification Content  */}
-            <div className="flex flex-col min-w-0  justify-center items-center">
-              <p className="opacity-80 ">{item.title}</p>
+            {/* Bottom Row: Title nicely placed below */}
+            <div className="pl-[40px]">
+              <p className="text-xs text-neutral opacity-80 break-words leading-relaxed">
+                {item?.title}
+              </p>
             </div>
           </div>
         ))}
