@@ -1,16 +1,79 @@
-# React + Vite
+# Task Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Live Project
 
-Currently, two official plugins are available:
+- Live : https://peppy-mermaid-fb190c.netlify.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 👨‍💼 Admin Features
+- Create Task
+- Manage All Tasks
+- Edit Task
+- Delete Task
+- View Task Details
+- Update Task Status (Pending → In Progress → Done)
+- Manage All Users
+- Activate / Block Users
+- Delete Users
+- View Notifications
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 👨‍💻 Employee Features
+- View Own Tasks
+- Update Own Task Status
+- View Task Details
+- Receive Notifications
+
+---
+
+## 🌍 Common Features
+- Authentication & Authorization
+- Search Functionality
+- Filter Functionality
+- Pagination
+- Responsive Design
+- Full CRUD Operations
+
+---
+
+# 🔐 Authentication & Security
+- Custom Authentication System
+- JWT Authentication
+- Password Hashing with bcryptjs
+- LocalStorage Authentication Persistence
+- Protected Routes
+
+---
+
+# 🛠️ Technologies Used
+
+## Frontend
+- React.js
+
+## Backend
+- Node.js
+- Express.js
+
+## Database
+- MongoDB
+
+## Authentication & Security
+- JWT
+- bcryptjs
+
+---
+
+# 📌 CRUD Operations
+- POST → Create Data
+- GET → Read Data
+- PATCH → Update Data
+- DELETE → Remove Data
+
+---
+
+# 🎯 Project Goal
+This project is designed to help admins manage employees and tasks efficiently while employees can track and update their assigned tasks easily.
